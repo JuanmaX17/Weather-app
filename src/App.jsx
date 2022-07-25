@@ -7,7 +7,7 @@ import { Video } from './components/Video/index.video';
 function App() {
   return (
     <>
-      <h1>Hola</h1>
+      <h1>Holaxxx</h1>
       <Provider store={store}>
         <Video />
       </Provider>
