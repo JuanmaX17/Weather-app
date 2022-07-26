@@ -2,16 +2,17 @@ import './App.css';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
-import { Video } from './components/Video/index.video';
+import { Video } from './components/Weather/index.weather';
+import { Search } from './components/Search/index.search';
 
 function App() {
   return (
-    <>
-      <h1>HolaxxxTTT</h1>
-      <Provider store={store}>
-        <Video />
-      </Provider>
-    </>
+
+    <Provider store={store}>
+      <h1>¿ Hows Weather today ?</h1>
+      <Search />
+      <Video />
+    </Provider>
   );
 }
 

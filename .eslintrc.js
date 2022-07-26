@@ -23,5 +23,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-console': 'off',
     'no-param-reassign': ['error', { props: false }],
+    'react/jsx-one-expression-per-line': 'off',
   },
 };

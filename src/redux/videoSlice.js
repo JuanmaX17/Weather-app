@@ -3,14 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 export const videoSlice = createSlice({
   name: 'vide slice',
   initialState: {
-    value: 0,
+    value: undefined,
   },
   reducers: {
-    getVideo: (state) => {
-      console.log('video');
-      state.value += 1;
+    setWheater: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
-export const { getVideo } = videoSlice.actions;
+export const { setWheater } = videoSlice.actions;
