@@ -1,0 +1,43 @@
+{
+    "coord": {
+      "lon": -75.5736,
+      "lat": 6.2443
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 295.93,
+      "feels_like": 296.2,
+      "temp_min": 293.45,
+      "temp_max": 296.23,
+      "pressure": 1022,
+      "humidity": 74
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 90
+    },
+    "clouds": {
+      "all": 40
+    },
+    "dt": 1658852919,
+    "sys": {
+      "type": 1,
+      "id": 8577,
+      "country": "CO",
+      "sunrise": 1658832978,
+      "sunset": 1658877663
+    },
+    "timezone": -18000,
+    "id": 3674962,
+    "name": "Medellín",
+    "cod": 200
+  }
