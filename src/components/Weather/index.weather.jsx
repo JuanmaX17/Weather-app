@@ -5,7 +5,7 @@ import { MapView } from '../MapView/index.mapView';
 import { setWheater } from '../../redux/videoSlice';
 import { getWhater } from '../../api/servecies';
 
-export function Video() {
+export function Weather() {
   const wheater = useSelector((state) => state.video.value);
   const dispatch = useDispatch();
   console.log('datasooooooo: ', wheater, wheater?.coord.lon);
