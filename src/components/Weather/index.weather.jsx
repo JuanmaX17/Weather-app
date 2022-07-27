@@ -5,7 +5,7 @@ import { MapView } from '../MapView/index.mapView';
 import { setWheater } from '../../redux/videoSlice';
 import { getWhater } from '../../api/servecies';
 
-export function Video() {
+export function Weather() {
   const wheater = useSelector((state) => state.video.value);
   const dispatch = useDispatch();
   console.log('datasooooooo: ', wheater, wheater?.coord.lon);
@@ -34,6 +34,9 @@ export function Video() {
           <img className="weather__img" src={`https://openweathermap.org/img/wn/${wheater?.weather[0].icon}@2x.png`} alt="weather" />
           <span className="weather__temp">{wheater?.weather[0].description}</span>
           <span className="weather__temp space"> {wheater?.main.temp} C</span>
+        </figure>
+        <figure className="weather__country">
+          <img className="weather__img" src={`https://openweathermap.org/images/flags/${wheater?.sys?.country.toLowerCase()}.png`} alt="weather" />
         </figure>
       </article>
       <article className="weather__image2">

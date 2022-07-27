@@ -15,7 +15,6 @@ export function MapView() {
   const API_KEY = 'TorepQVmDimKBzIvkffi';
 
   useEffect(() => {
-    if (maplibregl) return;
     map.current = new maplibregl.Map({
       container: mapContainer.current,
       style: `https://api.maptiler.com/maps/streets/style.json?key=${API_KEY}`,/* eslint-disable-line */
