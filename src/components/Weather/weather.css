@@ -1,0 +1,127 @@
+:root{
+    --color-place: rgb(255, 245, 245);
+}
+
+.weather{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'data image1'
+    'icon icon'
+    'image2 image2'
+    ;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 10px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.weather__title{
+    color: black;
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+.weather__subtitle{
+    font-size: 1.3rem;
+    color: var(--color-place);
+    color: black;
+}
+
+.weather__place{
+    letter-spacing: 2.4px;
+    color: black;
+  
+}
+
+.weather__temp{
+ 
+    letter-spacing: 1.4px;
+    line-height: 1;
+    font-size: 1.6rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.weather > *{
+    padding: 10px;
+    text-align: left;
+}
+
+.weather__data{
+    grid-area: data;
+    line-height: 2;
+    display: grid;
+    place-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.weather__image1{
+    grid-area: image1;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.weather__image2{
+    grid-area: image2;
+    padding-top: 40px;
+}
+
+.weather__icon{
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.weather__icon figure{
+    color: rgb(0, 0, 0);
+    background-color: rgba(156, 172, 181, 0.395);
+    padding: 10px 40px;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.weather__img{
+    align-self: center;
+    width: 40% !important;
+}
+
+.weather__img1{
+    width: 70%;
+    max-width: 300px;
+}
+
+.weather__info{
+    font-size: 1rem;
+}
+
+.space{
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    .weather{
+        padding: 50px 70px;
+        grid-template-areas: 
+        'data image1'
+        'icon image2';
+    }
+}

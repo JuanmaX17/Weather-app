@@ -27,13 +27,13 @@ export function Search() {
   }
 
   return (
-    <div className="weather">
-      <input className="weather__input weather__seraches" placeholder="search some..." onChange={() => handlerSearches()} ref={inputRef} />
-      <div className="weather__results weather__seraches">
+    <div className="search">
+      <input className="search__input search__seraches" placeholder="search some..." onChange={() => handlerSearches()} ref={inputRef} />
+      <div className="search__results search__seraches">
         {
           places.features?.map((item) => (
-            <p className="weather__item" key={item.id}>
-              <button className="weather__cta" type="button" onClick={() => searchCity({ lon: item.center[0], lat: item.center[1], place: item.place_name })}>
+            <p className="search__item" key={item.id}>
+              <button className="search__cta" type="button" onClick={() => searchCity({ lon: item.center[0], lat: item.center[1], place: item.place_name })}>
                 {item.place_name}
               </button>
             </p>
