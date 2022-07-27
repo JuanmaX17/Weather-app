@@ -35,6 +35,9 @@ export function Video() {
           <span className="weather__temp">{wheater?.weather[0].description}</span>
           <span className="weather__temp space"> {wheater?.main.temp} C</span>
         </figure>
+        <figure className="weather__country">
+          <img className="weather__img" src={`https://openweathermap.org/images/flags/${wheater?.sys?.country.toLowerCase()}.png`} alt="weather" />
+        </figure>
       </article>
       <article className="weather__image2">
         {!!wheater && <MapView />}
