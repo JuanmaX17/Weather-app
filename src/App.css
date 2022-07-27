@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.app__title{
+  color: var(--color-place);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#root{
+  padding-top: 24px;
+}
+
+@media (min-width: 800px) {
+  #root{
+    padding-top: 50px;
+  }
+}

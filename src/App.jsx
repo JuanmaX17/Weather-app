@@ -9,7 +9,7 @@ function App() {
   return (
 
     <Provider store={store}>
-      <h1>¿ Hows Weather today ?</h1>
+      <h1 className="app__title">¿ Hows Weather today ?</h1>
       <Search />
       <Video />
     </Provider>
